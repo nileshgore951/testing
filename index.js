@@ -12,4 +12,4 @@ app.use("*", (req, res) => {
     res.sendFile("public/index.html")
 })
 
-app.listen(precess.env.PORT || 5000, console.log("running"))
+app.listen(express.env.PORT || 5000, console.log("running"))
