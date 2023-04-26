@@ -1,6 +1,4 @@
 const express = require("express")
-require("dotenv").config({ path: ".env" })
-require("dotenv").config({ path: ".env" })
 
 const app = express()
 app.use(express.static("public"))
@@ -14,4 +12,4 @@ app.use("*", (req, res) => {
     res.sendFile("public/index.html")
 })
 
-app.listen(express.env.PORT || 5000, console.log("running"))
+app.listen(console.log("running"))
