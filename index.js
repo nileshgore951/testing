@@ -12,4 +12,4 @@ app.use("*", (req, res) => {
     res.sendFile("public/index.html")
 })
 
-app.listen(console.log("running"))
+app.listen(process.env.PORT || 5000, console.log("running"))
